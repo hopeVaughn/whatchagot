@@ -4,7 +4,7 @@ type Props = {};
 
 const CreateRecipePage = (props: Props) => {
   return (
-    <div>page</div>
+    <div>create a new recipe page</div>
   );
 };
 
