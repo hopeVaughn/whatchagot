@@ -6,39 +6,40 @@ import Link from 'next/link';
 const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 lg:top-1/2 md:top-1/2 lg:-translate-y-1/2 md:-translate-y-1/2 lg:h-[70%] md:h-[70%] sm:h-full w-16 z-10 rounded-r-2xl">
-      <div className="flex flex-col justify-between h-full bg-gray-700 rounded-r-2xl">
-        {/* All links except the last one will grow to fill the space evenly */}
-        <div className="flex flex-col flex-grow">
-          <Link href="#home" className="w-full flex-1">
-            <div className="flex items-center justify-center w-full h-full rounded-r-2xl hover:bg-gray-600">
+      <div className="flex flex-col h-full bg-gray-700 rounded-r-2xl">
+        {/* Container for the icons */}
+        <div className="flex flex-col flex-grow space-y-2 py-3">
+          {/* Icons evenly distributed */}
+          <Link href="#home">
+            <div className="flex items-center justify-center w-full h-12 hover:bg-gray-600 rounded-r-2xl">
               <Home />
             </div>
           </Link>
-          <Link href="#community" className="w-full flex-1">
-            <div className="flex items-center justify-center w-full h-full hover:bg-gray-600">
+          <Link href="#community">
+            <div className="flex items-center justify-center w-full h-12 hover:bg-gray-600 rounded-r-2xl">
               <BookOpenText />
             </div>
           </Link>
-          <Link href="#pricing" className="w-full flex-1">
-            <div className="flex items-center justify-center w-full h-full hover:bg-gray-600">
+          <Link href="#pricing">
+            <div className="flex items-center justify-center w-full h-12 hover:bg-gray-600 rounded-r-2xl">
               <CircleDollarSign />
             </div>
           </Link>
-          <Link href="#faq" className="w-full flex-1">
-            <div className="flex items-center justify-center w-full h-full hover:bg-gray-600">
+          <Link href="#faq">
+            <div className="flex items-center justify-center w-full h-12 hover:bg-gray-600 rounded-r-2xl">
               <HelpCircle />
             </div>
           </Link>
-          <Link href="#contact" className="w-full flex-1">
-            <div className="flex items-center justify-center w-full h-full hover:bg-gray-600">
+          <Link href="#contact">
+            <div className="flex items-center justify-center w-full h-12 hover:bg-gray-600 rounded-r-2xl">
               <Mail />
             </div>
           </Link>
         </div>
 
-        {/* This link will be pushed to the bottom */}
-        <Link href="#profile" className="w-full flex-1">
-          <div className="flex items-center justify-center w-full h-full rounded-r-2xl hover:bg-gray-600">
+        {/* User icon at the bottom */}
+        <Link href="#profile">
+          <div className="flex items-center justify-center w-full h-12 mt-auto hover:bg-gray-600 rounded-r-2xl">
             <User />
           </div>
         </Link>
