@@ -6,10 +6,10 @@ import Image from 'next/image';
 import heroImage from '../public/heroImage.png';
 
 const navigation = [
+  { name: 'Pricing', href: '#' },
   { name: 'FAQ', href: '#' },
-  { name: 'Contact', href: '#' },
-  { name: 'Register', href: '#' },
   { name: 'Community CookBook', href: '#' },
+  { name: 'Contact Us', href: '#' },
 ];
 
 export default function HeroSection() {
