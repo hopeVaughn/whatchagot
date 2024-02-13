@@ -37,7 +37,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* User icon at the bottom */}
+        {/* User icon at the bottom. This needs to be fixed still */}
         <Link href="#profile">
           <div className="flex items-center justify-center w-full h-12 mt-auto hover:bg-gray-600 rounded-r-2xl">
             <User />
