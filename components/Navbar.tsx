@@ -21,7 +21,7 @@ const Navbar = () => {
   const hoverColor = effectiveTheme === 'light' ? 'hover:bg-gray-200' : 'hover:bg-gray-600';
 
   return (
-    <div className="fixed  h-[50%] lg:h-[50%] md:h-[50%] flex top-1/2 -translate-y-1/2 z-10">
+    <div className="fixed h-[50%] lg:h-[50%] md:h-[50%] flex top-1/2 -translate-y-1/2 z-10">
       <nav
         className={`flex transition-transform duration-300 ${isOpen ? 'translate-x-0' : '-translate-x-16'
           }`}
@@ -31,7 +31,7 @@ const Navbar = () => {
           <div className="flex flex-col flex-grow space-y-2">
             {/* Icons evenly distributed */}
             <Link href="#home">
-              <div className={`flex items-center justify-center w-full h-12 ${hoverColor} rounded-tr-2xl`}>
+              <div className={`flex items-center justify-center w-full h-12 ${hoverColor} rounded-tr-xl`}>
                 <Home />
               </div>
             </Link>
@@ -62,7 +62,7 @@ const Navbar = () => {
 
           {/* User icon at the bottom */}
           <Link href="#profile">
-            <div className={`flex items-center justify-center w-full h-12 mt-auto ${hoverColor} rounded-br-2xl`}>
+            <div className={`flex items-center justify-center w-full h-12 mt-auto ${hoverColor} rounded-br-xl`}>
               <User />
             </div>
           </Link>

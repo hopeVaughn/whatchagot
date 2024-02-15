@@ -7,12 +7,10 @@ export default function Home() {
   return (
     <main>
       <Navbar />
-      <section className="mx-24">
-        <HeroSection />
-        <PricingSection />
+      <HeroSection />
+      {/* <PricingSection />
         <AboutSection />
-        <ContactSection />
-      </section>
+        <ContactSection /> */}
     </main>
   );
 }
