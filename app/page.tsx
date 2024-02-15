@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main>
       <Navbar />
-      <section className="mx-20">
+      <section className="mx-24">
         <HeroSection />
         <PricingSection />
         <AboutSection />
