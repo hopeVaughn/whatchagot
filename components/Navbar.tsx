@@ -1,6 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import { ModeToggle } from './ModeToggle';
+import { UserButton } from '@clerk/nextjs';
 import { useTheme } from 'next-themes';
 import { Home, BookOpenText, CircleDollarSign, HelpCircle, Mail, User, Tally2 } from 'lucide-react';
 import Link from 'next/link';
@@ -63,7 +64,7 @@ const Navbar = () => {
           {/* User icon at the bottom */}
           <Link href="#profile">
             <div className={`flex items-center justify-center w-full h-12 mt-auto ${hoverColor} rounded-br-xl`}>
-              <User />
+              <UserButton afterSignOutUrl='/' />
             </div>
           </Link>
         </div>

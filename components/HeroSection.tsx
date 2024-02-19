@@ -26,7 +26,7 @@ const HeroSection = (props: Props) => {
             Discover new dishes or create your own original recipes!
           </p>
           <Button asChild className='justify-center md:justify-end lg:justify-end'>
-            <Link href='/#'>
+            <Link href='/create'>
               Start Cooking!
             </Link>
           </Button>
