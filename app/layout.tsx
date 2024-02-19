@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import 'app/globals.css';
+import { ClerkProvider } from '@clerk/nextjs';
 import Providers from './providers';
 import { Inter } from 'next/font/google';
 
@@ -16,12 +17,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
-        <Providers>
-          {children}
-        </Providers>
-      </body>
-    </html>
+    <ClerkProvider>
+      <html lang="en" suppressHydrationWarning>
+        <body className={inter.className}>
+          <Providers>
+            {children}
+          </Providers>
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }
